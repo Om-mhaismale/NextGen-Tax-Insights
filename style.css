@@ -1,0 +1,113 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('tax.jpg');
+    background-size: cover;
+    background-blend-mode: overlay; /* or 'multiply', 'screen', etc. */
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+}
+
+
+.transparent-header {
+    background-color: rgba(255, 255, 255, 0.6); /* White with 60% opacity */
+    backdrop-filter: blur(10px); /* Blur effect */
+    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    padding: 20px;
+    position: sticky;
+    top: 0;
+    display: flex; /* Make it a flex container */
+    align-items: center; /* Vertically centers items */
+    justify-content: space-between; /* Pushes items to opposite ends */
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+}
+
+
+h1{
+    color: antiquewhite;
+    padding-left: 30px;
+}
+
+.nav-links {
+    display: flex; /* Display links inline */
+    gap: 20px; /* Space between links */
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #000000;
+}
+
+.nav-links a:hover {
+    color: rgb(255, 245, 245); /* Example hover effect */
+    
+}
+ /* code for cotainer of active and passive income */
+.container {
+    display: flex;
+    justify-content: space-between;
+    width: 40%;
+   margin-top: 60px;
+   margin-left: 200px;
+}
+
+.box {
+    /* background-image: url('ocean.jpg'); */
+    width: 40%;
+    height: 150px;
+    background-color: #6c6c6c;
+    color: rgb(255, 255, 255);
+    font-size: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    text-decoration: none;
+    font-size: 25px;
+    font-style: oblique;
+    transition: background-color 0.3s ease;
+}
+
+
+.box:hover {
+    background-color:#838791;
+}
+
+.con,.abt{
+    color: blanchedalmond;
+}
+
+.list{
+    color: beige;
+}
+
+h2 {
+    margin: 0;
+    padding-left: 10px;
+}
+
+section {
+    padding: 60px 20px;
+}
+.content {
+    flex-grow: 1;
+    padding: 30px;
+    text-align: center;
+}
+
+p{
+    color: beige;
+}
+
+.foot {
+    margin: 0;
+    text-align: center;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
