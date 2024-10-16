@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gold Tax Calculator (India FY 2024-25)</title>
+    <link rel="stylesheet" href="gold.css">
+</head>
+
+<body>
+    <header class="head">
+        <div>
+            <h1>Gold Tax Calculator (India FY 2024-25)</h1>
+        </div>
+    </header>
+    <div class="container">
+        
+        <div class="choice">
+            <label for="transaction">Do you want to buy or sell gold?</label>
+            <select id="transaction" onchange="displayForm()">
+                <option value="">Select</option>
+                <option value="buy">Buy</option>
+                <option value="sell">Sell</option>
+            </select>
+        </div>
+
+        <!-- Buy Form -->
+        <div id="buyForm" class="form-section hidden">
+            <h2>Buying Gold</h2>
+            <label for="buyValue">Enter the value of gold:</label>
+            <input type="number" id="buyValue" placeholder="Enter value in INR">
+            <button onclick="calculateGST()">Calculate GST</button>
+            <p id="gstResult"></p>
+        </div>
+
+        <!-- Sell Form -->
+        <div id="sellForm" class="form-section hidden">
+            <h2>Selling Gold</h2>
+            <label for="pgoldValue">Enter the purchase value of gold:</label>
+            <input type="number" id="pgoldValue" placeholder="Enter value in INR"><br>
+            <label for="sgoldValue">Enter the sale value of gold:</label>
+            <input type="number" id="sgoldValue" placeholder="Enter value in INR"><br>
+
+            <!-- <label for="goldYears">For how many years have you owned the gold?</label>
+            <input type="number" id="goldYears" placeholder="Enter number of years"><br> -->
+
+            <div class="choice">
+                <label for="compare">Select the Year: <br> (To ensure precision, the gap for "Years Greater than 3" should be equal to or greater than three years.)</label>
+                <select id="compare" onchange="comparing()">
+                    <option value="">Select</option>
+                    <option value="greater">Greater than 3</option>
+                    <option value="lesser">Less than 3</option>
+                </select>
+            </div>
+
+            <div id="greaterthan3" class="form-section hidden">
+                <label for="purchaseYear">Year of Purchase:</label>
+                <select id="purchaseYear">
+                    <option value="2001-02">2001-02</option>
+                    <option value="2002-03">2002-03</option>
+                    <option value="2003-04">2003-04</option>
+                    <option value="2004-05">2004-05</option>
+                    <option value="2005-06">2005-06</option>
+                    <option value="2006-07">2006-07</option>
+                    <option value="2007-08">2007-08</option>
+                    <option value="2008-09">2008-09</option>
+                    <option value="2009-10">2009-10</option>
+                    <option value="2010-11">2010-11</option>
+                    <option value="2011-12">2011-12</option>
+                    <option value="2012-13">2012-13</option>
+                    <option value="2013-14">2013-14</option>
+                    <option value="2014-15">2014-15</option>
+                    <option value="2015-16">2015-16</option>
+                    <option value="2016-17">2016-17</option>
+                    <option value="2017-18">2017-18</option>
+                    <option value="2018-19">2018-19</option>
+                    <option value="2019-20">2019-20</option>
+                    <option value="2020-21">2020-21</option>
+                    <option value="2021-22">2021-22</option>
+                    <option value="2022-23">2022-23</option>
+                    <option value="2023-24">2023-24</option>
+                    <option value="2024-25">2024-25</option>
+                </select>
+
+                <label for="saleYear">Year of Sale:</label>
+                <select id="saleYear">
+                    <option value="2024-25">2024-25</option>
+                    <option value="2023-24">2023-24</option>
+                    <option value="2022-23">2022-23</option>
+                    <option value="2021-22">2021-22</option>
+                    <option value="2020-21">2020-21</option>
+                    <option value="2019-20">2019-20</option>
+                    <option value="2018-19">2018-19</option>
+                    <option value="2017-18">2017-18</option>
+                    <option value="2016-17">2016-17</option>
+                    <option value="2015-16">2015-16</option>
+                    <option value="2014-15">2014-15</option>
+                    <option value="2013-14">2013-14</option>
+                    <option value="2012-13">2012-13</option>
+                    <option value="2011-12">2011-12</option>
+                    <option value="2010-11">2010-11</option>
+                    <option value="2009-10">2009-10</option>
+                    <option value="2008-09">2008-09</option>
+                    <option value="2007-08">2007-08</option>
+                    <option value="2006-07">2006-07</option>
+                    <option value="2005-06">2005-06</option>
+                    <option value="2004-05">2004-05</option>
+                    <option value="2003-04">2003-04</option>
+                    <option value="2002-03">2002-03</option>
+                    <option value="2001-02">2001-02</option>
+                </select>
+            </div>
+
+            <!-- <label for="totalIncome">Enter your total income (1 year):</label>
+            <input type="number" id="totalIncome" placeholder="Enter income in INR"><br> -->
+
+            <button onclick="calculateTax()">Calculate Tax</button>
+            <p id="taxResult"></p>
+        </div>
+    </div>
+
+    <script src="gold.js"></script>
+</body>
+
+</html>
