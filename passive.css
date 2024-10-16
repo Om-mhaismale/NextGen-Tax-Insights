@@ -1,0 +1,115 @@
+/* styles.css */
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #352f44;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo {
+    float: left;
+    color: #fff;
+    font-size: 24px;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .navbar .nav-links li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  
+  /* Button styles */
+  .button-container {
+    margin: 20px;
+    text-align: center;
+  }
+  
+  .btn {
+    padding: 10px 20px;
+    margin: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    border-radius: 4px;
+    color: #fff;
+    display: inline-block;
+    background-color: rgb(54, 16, 54);
+    text-transform: uppercase;
+    color: black;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+    top: 30px; 
+    left: 0;
+    
+  
+  }
+  a{
+    position: relative;
+  }
+  
+  
+  .btn:hover {
+    opacity: 0.8;
+    
+  }
+  
+  
+  
+    .button-container {
+        text-align: center;
+        padding-top: 30px;
+    }
+  
+  
+  
+  .taxes{
+    margin-top: 50px;
+    padding: 30px;
+    text-decoration: solid;
+  
+    
+  }
+  
+  html{
+    background-color: #2a2438;
+  }
+  
+  .Next{
+    margin-top: 10px;
+    padding:5px 30px 10px 30px;
+  }
+  
+  h1{
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 90px;
+  }
+  
+  h2{
+    text-align: center;
+  }
