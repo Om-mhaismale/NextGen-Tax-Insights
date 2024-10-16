@@ -1,24 +1,41 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Active Income</title>
-    <link rel="stylesheet" href="active.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="active.css">
 </head>
 <body>
-    <header>
-        <h1>Active Income</h1>
-    </header>
-    
-    <main>
-        <div class="income-form">
-            <label for="income-input">Enter your income:</label>
-            <input type="number" id="income-input" placeholder="Enter amount in INR">
-            <button type="button" onclick="submitIncome()">Submit</button>
-        </div>
-    </main>
-    
-    <script src="active.js"></script>
+  <nav class="navbar">
+    <div class="logo">NexGen Tax Insight</div>
+    <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+      
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<h1>Active Tax Insight</h1>
+
+<h2>
+  Enter Your Amount
+</h2>
+
+
+
+<div class="cg">
+  <form id="calculationForm">
+    <input type="number" id="gains" name="gains" >
+    <button type="submit">Submit</button>
+  </form>
+  <div class="result" id="result"></div>
+  </div>
+
+  <script src="active.js"></script>
+
+  
 </body>
 </html>
