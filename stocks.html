@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="stocks.css">
+</head>
+<body>
+  <body>
+    <nav class="navbar">
+      <div class="logo">NexGen Tax Insight</div>
+      <ul class="nav-links">
+          <li><a href="passive.html">Passive</a></li>
+          <!-- <li><a href="#about">About</a></li>
+        
+          <li><a href="#contact">Contact</a></li> -->
+      </ul>
+  </nav>
+  
+  <h1>Stocks Tax Insight</h1>
+
+  <h2>
+    Enter Your Amount
+  </h2>
+  <div class="box">
+
+  
+   <div>
+
+    <h3> Short Term Gains
+
+    </h3>
+    <div class="news">
+      For equity shares and equity mutual funds, if held for 12 months or less, the profit is classified as short-term capital gains.
+
+    </div>
+    <div class="cg" id="cg1">
+      <form id="short">
+        <!-- <label for="gains"></label> -->
+        <input type="number" id="gains1" name="gains1" >
+        <button type="submit">Submit</button>
+      </form>
+      <div class="result" id="resultshort"></div>
+      </div>
+        
+   </div>
+
+   <div>
+
+    <h3> Long Term Gains
+
+    </h3>
+    <div class="news">
+      For equity shares and equity mutual funds, if held for more than 12 months, the profit is classified as long-term capital gains.
+      
+      (Gains up to ₹1,25,000 in a financial year are tax-exempt.)
+    </div>
+    <div class="cg">
+      <form id="long">
+        <input type="number" id="gains" name="gains" >
+        <button type="submit">Submit</button>
+      </form>
+
+      <div class="result" id="resultlong"></div>
+      </div>
+        
+   </div>
+  </div>
+
+  <script src="stocks.js"></script>
+  
+</body>
+</html>

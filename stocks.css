@@ -1,0 +1,96 @@
+h1{
+    text-align: center;
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+  }
+  
+  .navbar {
+    background-color: #352f44;
+    overflow: hidden;
+    padding: 0 20px;
+  }
+  
+  .navbar .logo {
+    float: left;
+    color: #fff;
+    font-size: 24px;
+    padding: 18px 20px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .navbar .nav-links {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    float: right;
+  }
+  
+  .navbar .nav-links li {
+    display: inline;
+  }
+  
+  .navbar .nav-links li a {
+    color: white;
+    text-align: center;
+    padding: 20px 20px;
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  .navbar .nav-links li a:hover {
+    background-color: #575757;
+    border-radius: 4px;
+  }
+  html{
+    background:#2a2438;
+  }
+  
+  h2{
+    text-align: center;
+  }
+  
+  .box{
+    display: flex;
+    justify-content: space-evenly;
+  
+  }
+  
+  .cg{
+    padding: 35px 10px 20px 0px;
+  }
+  
+  .news{
+    width: 400px;
+    height: 40px;
+    padding-bottom: 20px;
+    
+  }
+  
+  button:hover{
+    opacity: .9;
+    cursor: pointer;
+  }
+  
+  #gains{
+    padding: 0px 22px 0px 22px;
+  }
+  
+  #cg1{
+    padding-top: 38px;
+  }
+  
+  #gains1{
+    padding: 0px 22px 0px 22px;
+  
+  }
+  
+  .result {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+  }
