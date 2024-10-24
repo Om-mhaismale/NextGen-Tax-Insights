@@ -9,13 +9,10 @@
 </head>
 
 <body>
-    <header class="head">
-        <div>
-            <h1>Gold Tax Calculator (India FY 2024-25)</h1>
-        </div>
+    <h1>Gold Tax</h1>
     </header>
     <div class="container">
-        
+
         <div class="choice">
             <label for="transaction">Do you want to buy or sell gold?</label>
             <select id="transaction" onchange="displayForm()">
@@ -46,7 +43,8 @@
             <input type="number" id="goldYears" placeholder="Enter number of years"><br> -->
 
             <div class="choice">
-                <label for="compare">Select the Year: <br> (To ensure precision, the gap for "Years Greater than 3" should be equal to or greater than three years.)</label>
+                <label for="compare">Select the Year: <br> (To ensure precision, the gap for "Years Greater than 3"
+                    should be equal to or greater than three years.)</label>
                 <select id="compare" onchange="comparing()">
                     <option value="">Select</option>
                     <option value="greater">Greater than 3</option>

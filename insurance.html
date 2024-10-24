@@ -4,8 +4,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Insurance</title>
+    <link rel="stylesheet" href="insurance.css">
 </head>
 <body>
-    
+    <div class="container">
+        <h1>Insurance</h1>
+
+        <form id="insuranceForm">
+            <label for="lifePremium">Life Insurance Premium (₹):</label>
+            <input type="number" id="lifePremium" name="lifePremium" min="0" placeholder="Enter amount else 0">
+
+            <label for="maturityProceeds">Maturity Proceeds Received? (₹):</label>
+            <input type="number" id="maturityProceeds" name="maturityProceeds" min="0" placeholder="Enter amount (if any) else 0">
+
+            <label for="healthPremium">Health Insurance Premium (₹):</label>
+            <input type="number" id="healthPremium" name="healthPremium" min="0" placeholder="Enter amount else 0">
+
+            <label for="familyCover">Are Family Members Covered?</label>
+            <div>
+                <input type="radio" id="familyYes" name="familyCover" value="yes">
+                <label for="familyYes">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="familyNo" name="familyCover" value="no">
+                <label for="familyNo">No</label>
+            </div>
+
+            <label for="vehiclePremium">Vehicle Insurance Premium (₹):</label>
+            <input type="number" id="vehiclePremium" name="vehiclePremium" min="0" placeholder="Enter amount else 0">
+
+            <label for="vehicleUse">Vehicle Use:</label>
+            <div>
+                <input type="radio" id="vehiclePersonal" name="vehicleUse" value="personal">
+                <label for="vehiclePersonal">Personal</label>
+            </div>
+            <div>
+                <input type="radio" id="vehicleCommercial" name="vehicleUse" value="commercial">
+                <label for="vehicleCommercial">Commercial</label>
+            </div>
+
+            <button type="button" onclick="calculateTax()">Calculate Tax</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script src="insurance.js"></script>
 </body>
 </html>
