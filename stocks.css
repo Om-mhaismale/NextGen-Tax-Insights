@@ -1,11 +1,14 @@
 h1{
     text-align: center;
+    color: beige;
   }
   
   
   body {
     margin: 0;
     font-family: Arial, sans-serif;
+    background: radial-gradient(rgba(111, 111, 111, 0.6), rgb(0, 0, 0));
+    min-height: 100vh;
   }
   
   .navbar {
@@ -16,7 +19,7 @@ h1{
   
   .navbar .logo {
     float: left;
-    color: #fff;
+    color: beige;
     font-size: 24px;
     padding: 18px 20px;
     text-decoration: none;
@@ -46,12 +49,13 @@ h1{
     background-color: #575757;
     border-radius: 4px;
   }
-  html{
+  /* html{
     background:#2a2438;
-  }
+  } */
   
   h2{
     text-align: center;
+    color: beige;
   }
   
   .box{
@@ -94,3 +98,12 @@ h1{
     font-size: 18px;
     font-weight: bold;
   }
+  .home {
+    position: relative;
+    color: beige;
+    text-decoration: none;
+}
+
+.home:hover {
+    color: rgb(194, 194, 174);
+}

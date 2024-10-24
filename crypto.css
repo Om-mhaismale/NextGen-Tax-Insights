@@ -1,82 +1,92 @@
 body {
-    margin: 0;
-    font-family: Arial, sans-serif;
-  }
-  
-  .navbar {
-    background-color: #352f44;
-    overflow: hidden;
-    padding: 0 20px;
-  }
-  
-  .navbar .logo {
-    float: left;
-    color: #fff;
-    font-size: 24px;
-    padding: 18px 20px;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .navbar .nav-links {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
-  }
-  
-  .navbar .nav-links li {
-    display: inline;
-  }
-  
-  .navbar .nav-links li a {
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .navbar .nav-links li a:hover {
-    background-color: #575757;
-    border-radius: 4px;
-  }
-  html{
-    background: #2a2438;
-  }
-  
-  h2{
-    padding:100px 0px 2px 145px ;
-  }
-  
-  .line{
-    padding:0px 0px 5px 144px ;
-    font-weight: 200px;
-    text-transform: uppercase;
-  
-  }
-  
-  .cg{
-    padding:0px 0px 5px 144px ;
-  
-  }
-  
-  #gains{
-    padding: 0px 22px 0px 22px;
-  }
-  
-  button:hover{
-    opacity: .9;
-    cursor: pointer;
-  }
-  
-  h1{
-    text-align: center;
-  }
-  
-  .result {
-    padding-left: 149px;
-    margin-top: 20px;
-    font-size: 18px;
-    font-weight: bold;
-  }
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: radial-gradient(rgba(111, 111, 111, 0.6), rgb(0, 0, 0));
+  height: 100vh;
+}
+
+.navbar {
+  background-color: #352f44;
+  overflow: hidden;
+  padding: 0 20px;
+}
+
+.navbar .logo {
+  float: left;
+  color: #fff;
+  font-size: 24px;
+  padding: 18px 20px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.navbar .nav-links {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+
+.navbar .nav-links li {
+  display: inline;
+}
+
+.navbar .nav-links li a {
+  color: white;
+  text-align: center;
+  padding: 20px 20px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.navbar .nav-links li a:hover {
+  background-color: #575757;
+  border-radius: 4px;
+}
+
+h2 {
+  padding: 100px 0px 2px 145px;
+}
+
+.line {
+  padding: 0px 0px 5px 144px;
+  font-weight: 200px;
+  text-transform: uppercase;
+
+}
+
+.cg {
+  padding: 0px 0px 5px 144px;
+
+}
+
+#gains {
+  padding: 0px 22px 0px 22px;
+}
+
+button:hover {
+  opacity: .9;
+  cursor: pointer;
+}
+
+h1 {
+  text-align: center;
+  color: beige;
+}
+
+.result {
+  padding-left: 149px;
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.home {
+  position: relative;
+  color: beige;
+  text-decoration: none;
+}
+
+.home:hover {
+  color: rgb(194, 194, 174);
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Property</title>
+    <link rel="stylesheet" href="property.css">
+</head>
+<body>
+    
+        <h1>Property->
+            <a class="home" href="passive.html">Passive</a>
+        </h1>
+        <div class="container">
+        <form id="taxForm">
+            <label for="purchasePrice">Purchase Price (₹):</label>
+            <input type="number" id="purchasePrice" required>
+
+            <label for="sellingPrice">Selling Price (₹):</label>
+            <input type="number" id="sellingPrice" required>
+
+            <label for="holdingPeriod">Holding Period (Months):</label>
+            <input type="number" id="holdingPeriod" required>
+
+            <label for="purchaseYear">Year of Purchase:</label>
+            <input type="number" id="purchaseYear" required>
+
+            <label for="saleYear">Year of Sale:</label>
+            <input type="number" id="saleYear" required>
+
+            <button type="button" onclick="calculateTax()">Calculate Tax</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+    <script src="property.js"></script>
+</body>
+</html>
