@@ -8,50 +8,42 @@ h1{
     margin: 0;
     font-family: Arial, sans-serif;
     background: radial-gradient(rgba(111, 111, 111, 0.6), rgb(0, 0, 0));
+    background-repeat: no-repeat;
     min-height: 100vh;
   }
   
-  .navbar {
-    background-color: #352f44;
-    overflow: hidden;
-    padding: 0 20px;
-  }
-  
-  .navbar .logo {
-    float: left;
+  header {
+    background-color: rgba(150, 150, 150, 0.6);
+    /* White with 60% opacity */
+    backdrop-filter: blur(10px);
+    padding: 10px;
+    margin: 20px;
+    border-radius: 10px;
+    display: flex;
+    /* Make it a flex container */
+    align-items: center;
+    justify-content:space-between;
     color: beige;
-    font-size: 24px;
-    padding: 18px 20px;
-    text-decoration: none;
+    font-size: 30px;
     font-weight: bold;
+    /* text-align: center; */
+    /* gap: 25% */
+  }
+  .pass{
+    font-size: 30px;
+    /* letter-spacing: 5px; */
   }
   
-  .navbar .nav-links {
+  .nav-links {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
-    float: right;
   }
-  
-  .navbar .nav-links li {
-    display: inline;
+  img{
+    width: 200px; /* Set fixed width */
+    height: 60px; /* Set fixed height */
+    object-fit: cover;
+    padding: 1px;
+    /* word-wrap: break-word; */
   }
-  
-  .navbar .nav-links li a {
-    color: white;
-    text-align: center;
-    padding: 20px 20px;
-    text-decoration: none;
-    display: inline-block;
-  }
-  
-  .navbar .nav-links li a:hover {
-    background-color: #575757;
-    border-radius: 4px;
-  }
-  /* html{
-    background:#2a2438;
-  } */
   
   h2{
     text-align: center;
@@ -61,6 +53,7 @@ h1{
   .box{
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
   
   }
   

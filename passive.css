@@ -7,17 +7,44 @@ body {
   min-height: 100vh;
 }
 
-.navbar {
-  background: radial-gradient(rgba(111, 111, 111, 0.6), rgb(0, 0, 0));
-  overflow: hidden;
-  padding: 0 20px;
+header {
+  background-color: rgba(150, 150, 150, 0.6);
+  /* White with 60% opacity */
+  backdrop-filter: blur(10px);
+  padding: 10px;
+  margin: 20px;
+  border-radius: 10px;
+  display: flex;
+  /* Make it a flex container */
+  align-items: center;
+  justify-content:space-between;
+  color: beige;
+  font-size: 30px;
+  font-weight: bold;
+  /* text-align: center; */
+  /* gap: 25% */
+}
+.pass{
+  font-size: 30px;
+  /* letter-spacing: 5px; */
 }
 
-.navbar .logo {
+.nav-links {
+  list-style-type: none;
+}
+img{
+  width: 200px; /* Set fixed width */
+  height: 60px; /* Set fixed height */
+  object-fit: cover;
+  padding: 1px;
+  /* word-wrap: break-word; */
+}
+
+/* .navbar .logo {
   float: left;
   color: #fff;
   font-size: 24px;
-  padding: 18px 20px;
+  padding: 20px;
   text-decoration: none;
   font-weight: bold;
 }
@@ -43,8 +70,8 @@ body {
 
 .navbar .nav-links li a:hover {
   color: rgb(188, 188, 188);
-  /* border-radius: 4px; */
-}
+  border-radius: 4px;
+} */
 
 /* Button styles */
 .button-container {
@@ -107,17 +134,10 @@ body {
     background-color: #2a2438;
   } */
 
-.Next {
+/* .Next {
   margin-top: 10px;
   padding: 5px 30px 10px 30px;
-}
-
-h1 {
-  text-align: center;
-  margin-top: 30px;
-  margin-bottom: 70px;
-  color: beige;
-}
+} */
 
 h2 {
   text-align: center;
