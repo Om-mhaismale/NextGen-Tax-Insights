@@ -139,11 +139,28 @@ img{
   padding: 5px 30px 10px 30px;
 } */
 
-h2 {
+.opt {
   text-align: center;
   color: beige;
 }
+main {
+  padding: 20px;
+}
 
+section {
+  
+  margin: 10px 0;
+  padding: 15px;
+}
+
+h2 {
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
+}
 @media (max-width: 768px) {
   .pass,.home{
     display: none;

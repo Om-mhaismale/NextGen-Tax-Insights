@@ -1,6 +1,6 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="active.css">
   <link rel="icon" href="favicon.png" type="image/png">
 </head>
+
 <body>
 
   <header>
@@ -16,28 +17,69 @@
     </div>
     <div class="pass">Active</div>
     <nav class="navbar">
-        <a class="home" href="index.html">
-            Home
-        </a>
-</header>
-</nav>
+      <a class="home" href="index.html">
+        Home
+      </a>
+  </header>
+  </nav>
 
-<h2>
-  Enter Your Amount
-</h2>
+  <h2 class="amt">
+    Enter Your Amount
+  </h2>
 
 
 
-<div class="cg">
-  <form id="calculationForm">
-    <input type="number" id="gains" name="gains" >
-    <button type="submit">Submit</button>
-  </form>
-  <div class="result" id="result"></div>
+  <div class="cg">
+    <form id="calculationForm">
+      <input type="number" id="gains" name="gains">
+      <button type="submit">Submit</button>
+    </form>
+    <div class="result" id="result"></div>
   </div>
 
   <script src="active.js"></script>
-
-  
+  <main>
+    <section>
+        <h2>1. Income Sources Classification</h2>
+        <p>Active income includes:</p>
+        <ul>
+            <li><strong>Salary:</strong> Basic pay, allowances (like HRA, DA), bonuses, commissions, and other benefits received by employees.</li>
+            <li><strong>Income from Business or Profession:</strong> Profits from business activities, self-employment, freelancing, and other professional services.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>2. Taxable Income Calculation</h2>
+        <p><strong>Gross Income:</strong> Calculate total earnings from active income sources.</p>
+        <p><strong>Allowable Deductions:</strong> Subtract eligible deductions (e.g., Standard Deduction, Provident Fund contributions, HRA exemption) to arrive at the taxable amount.</p>
+    </section>
+    <section>
+        <h2>3. Salary Components and Exemptions</h2>
+        <ul>
+            <li><strong>Standard Deduction:</strong> Employees are eligible for a standard deduction of ₹50,000 from their gross salary.</li>
+            <li><strong>House Rent Allowance (HRA):</strong> Deduction for HRA is available if the taxpayer lives in rented accommodation and meets certain conditions.</li>
+            <li><strong>Professional Tax:</strong> Some states levy professional tax, which can be deducted from gross salary.</li>
+            <li><strong>Other Allowances and Perquisites:</strong> Certain allowances (like leave travel allowance) and perquisites may be exempt or partially exempt from tax.</li>
+        </ul>
+    </section>
+    <section>
+        <h2>4. Income Tax Slabs for FY 2024-2025</h2>
+        <p>Active income is taxed based on the following slabs:</p>
+        <ul>
+            <li>Up to ₹3,00,000: Nil</li>
+            <li>₹3,00,001 to ₹7,00,000: 5%</li>
+            <li>₹7,00,001 to ₹10,00,000: 10%</li>
+            <li>₹10,00,001 to ₹12,00,000: 15%</li>
+            <li>₹12,00,001 to ₹15,00,000: 20%</li>
+            <li>Above ₹15,00,000: 30%</li>
+        </ul>
+    </section>
+    <section>
+        <h2>5. Income from Business and Profession</h2>
+        <p>Business income includes profits or gains derived from business or professional services.</p>
+        <p><strong>Allowable Expenses:</strong> Expenses directly related to the business (like rent, utilities, employee salaries) can be deducted from gross income.</p>
+        <p><strong>Presumptive Taxation:</strong> Small businesses and professionals with turnover under certain limits can opt for presumptive taxation (Sections 44AD, 44ADA), simplifying tax calculations.</p>
+    </section>
+</main>
 </body>
+
 </html>

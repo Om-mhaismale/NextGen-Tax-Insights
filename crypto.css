@@ -2,7 +2,7 @@ body {
   margin: 0;
   font-family: Arial, sans-serif;
   background: radial-gradient(rgba(111, 111, 111, 0.6), rgb(0, 0, 0));
-  height: 100vh;
+  min-height: 100vh;
 }
 
 header {
@@ -38,7 +38,7 @@ img{
   /* word-wrap: break-word; */
 }
 
-h2 {
+.amt {
   /* padding: 100px 0px 2px 145px; */
   text-align: center;
 }
@@ -86,6 +86,25 @@ h1 {
 
 .home:hover {
   color: rgb(194, 194, 174);
+}
+
+main {
+  padding: 20px;
+}
+
+section {
+  
+  margin: 10px 0;
+  padding: 15px;
+}
+
+h2 {
+  text-align: left;
+}
+
+ul {
+  list-style-type: disc;
+  margin-left: 20px;
 }
 
 @media (max-width: 768px) {
