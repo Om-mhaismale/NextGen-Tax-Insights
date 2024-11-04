@@ -4,43 +4,54 @@ body {
     padding: 0;
     background-image: url('tax.jpg');
     background-size: cover;
-    background-blend-mode: overlay; /* or 'multiply', 'screen', etc. */
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust opacity */
+    background-blend-mode: overlay;
+    /* or 'multiply', 'screen', etc. */
+    background-color: rgba(0, 0, 0, 0.5);
+    /* Adjust opacity */
     min-height: 100vh;
 }
-
 
 .transparent-header {
     margin: 20px;
     border-radius: 10px;
-    background-color: #ffffff99; /* White with 60% opacity */
-    backdrop-filter: blur(10px); /* Blur effect */
-    -webkit-backdrop-filter: blur(10px); /* Safari support */
+    background-color: #ffffff99;
+    /* White with 60% opacity */
+    backdrop-filter: blur(10px);
+    /* Blur effect */
+    /* -webkit-backdrop-filter: blur(10px); */
+    /* Safari support */
     padding: 10px 20px;
     position: sticky;
     /* top: 0; */
-    display: flex; /* Make it a flex container */
-    align-items: center; /* Vertically centers items */
-    justify-content: space-between; /* Pushes items to opposite ends */
+    display: flex;
+    /* Make it a flex container */
+    align-items: center;
+    /* Vertically centers items */
+    justify-content: space-between;
+    /* Pushes items to opposite ends */
 }
 
-img{
-    width: 200px; /* Set fixed width */
-    height: 60px; /* Set fixed height */
+img {
+    width: 200px;
+    /* Set fixed width */
+    height: 60px;
+    /* Set fixed height */
     object-fit: cover;
     padding: 1px;
     /* word-wrap: break-word; */
 }
 
 
-h1{
+h1 {
     color: beige;
     padding-left: 30px;
 }
 
 .nav-links {
-    display: flex; /* Display links inline */
-    gap: 20px; /* Space between links */
+    display: flex;
+    /* Display links inline */
+    gap: 20px;
+    /* Space between links */
 }
 
 .nav-links a {
@@ -49,16 +60,18 @@ h1{
 }
 
 .nav-links a:hover {
-    color: rgb(255, 245, 245); /* Example hover effect */
-    
+    color: rgb(255, 245, 245);
+    /* Example hover effect */
+
 }
- /* code for cotainer of active and passive income */
+
+/* code for cotainer of active and passive income */
 .container {
     display: flex;
     justify-content: space-between;
     width: 40%;
-   margin-top: 60px;
-   margin-left: 200px;
+    margin-top: 60px;
+    margin-left: 200px;
 }
 
 .box {
@@ -81,14 +94,15 @@ h1{
 
 
 .box:hover {
-    background-color:#838791;
+    background-color: #838791;
 }
 
-.con,.abt{
+.con,
+.abt {
     color: blanchedalmond;
 }
 
-.list{
+.list {
     color: beige;
 }
 
@@ -100,13 +114,14 @@ h2 {
 section {
     padding: 60px 20px;
 }
+
 .content {
     flex-grow: 1;
     padding: 30px;
     text-align: center;
 }
 
-p{
+p {
     color: beige;
 }
 
@@ -116,12 +131,36 @@ p{
     padding: 30px;
     background-color: rgba(0, 0, 0, 0.6);
 }
-footer{
+
+footer {
     margin-bottom: 0;
 }
 
 .no-bullets {
-    list-style-type: none;  
+    list-style-type: none;
     color: beige;
-  }
-  
+}
+
+@media (max-width: 768px) {
+
+    /* Hide the entire .nav-links and the <h2> elements within it */
+    .nav-links,
+    .nav-links h2 {
+        display: none;
+    }
+
+    /* Adjust layout to center the image in the header */
+    .transparent-header {
+        justify-content: center;
+    }
+
+    /* Optional: resize the image for smaller screens */
+    .transparent-header img {
+        width: 150px;
+        height: auto;
+    }
+    .box{
+        font-size: 16px;
+        height: 100px;
+    }
+}

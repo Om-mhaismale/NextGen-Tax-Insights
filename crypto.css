@@ -87,3 +87,12 @@ h1 {
 .home:hover {
   color: rgb(194, 194, 174);
 }
+
+@media (max-width: 768px) {
+  .pass,.home{
+    display: none;
+  }
+  header{
+    justify-content: center;
+  }
+}

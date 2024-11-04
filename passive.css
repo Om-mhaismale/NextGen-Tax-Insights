@@ -143,3 +143,12 @@ h2 {
   text-align: center;
   color: beige;
 }
+
+@media (max-width: 768px) {
+  .pass,.home{
+    display: none;
+  }
+  header{
+    justify-content: center;
+  }
+}
